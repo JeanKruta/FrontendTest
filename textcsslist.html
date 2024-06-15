@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste CSS Lista</title>
+    <style>
+body <!-- Poderia ser as tags h1, p, ul e ol separadas por vírgula no lugar do body--> {
+    font-family: sans-serif;
+}
+body {
+    color: rgb(2, 88, 2);
+} 
+a {
+    color:rgb(233, 22, 134);
+}
+a:hover {
+    color:rgb(2, 88, 2);
+    background-color: gray;
+}
+a:visited {
+    color: yellow; <!-- Está tomando a cor link sem ter clicado antes-->
+}
+a:active {
+    color:orangered
+}
+   ul li {
+        list-style-type: circle;
+    }
+    ol li {
+        list-style-type: upper-roman;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Teste HTML/CSS Listas
+    </h1>
+    <p>
+        <a href="https://shopee.com.br/Crash-Uma-breve-hist%C3%B3ria-da-economia-da-Gr%C3%A9cia-Antiga-ao-s%C3%A9culo-XXI-i.504064577.3088519797" target="blank_">
+            Confira o link </a> | <a href="InicioCSS.html" target="blank_"> Confira o arquivo </a>
+    <br>
+        <ul> <!-- Lista sem ordem -->
+            <li> Item 1 </li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>
+            <li> Item 4 </li>
+        </ul>
+    <hr>
+        <ol> <!-- Lista Ordenada -->
+            <li> Item 1 </li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>
+            <li> Item 4 </li>
+        </ol>
+    </p>
+</body>
+</html>

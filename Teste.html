@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        #registeredPersons {
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Person Registration</h1>
+
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="button" onclick="registerPerson()">Register</button>
+    </form>
+
+    <div id="registeredPersons">
+        <h2>Registered Persons</h2>
+        <ul id="personsList"></ul>
+    </div>
+
+    <script>
+        function registerPerson() {
+            var nameInput = document.getElementById('name');
+            var emailInput = document.getElementById('email');
+            var personsList = document.getElementById('personsList');
+
+            // Get the values from the form
+            var name = nameInput.value;
+            var email = emailInput.value;
+
+            // Display the information
+            var listItem = document.createElement('li');
+            listItem.textContent = 'Name: ' + name + ', Email: ' + email;
+            personsList.appendChild(listItem);
+
+            // Clear the form
+            nameInput.value = '';
+            emailInput.value = '';
+        }
+    </script>
+</body>
+</html>
